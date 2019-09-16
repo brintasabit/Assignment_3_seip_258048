@@ -81,10 +81,12 @@ namespace Assignment_3_bitm_seip
              {
                  MessageBox.Show("Please Select An Item");
              }*/
-            purchaseInformationRichTextBox.AppendText("\n\nName: " + customerName[index] 
-                + "\nContact: " + contactNumber[index] + "\nAddress: " + address[index] 
-                + "\nOrder: " + order[index] + "\nQuantity: "+ quantity[index]
-                +"\nTotal Price " +totalPrice);
+            
+                purchaseInformationRichTextBox.AppendText("\n\nName: " + customerName[index]
+                    + "\nContact: " + contactNumber[index] + "\nAddress: " + address[index]
+                    + "\nOrder: " + order[index] + "\nQuantity: " + quantity[index]
+                    + "\nTotal Price " + totalPrice);
+            
             customerNameTextBox.Text = " ";
             contactNumberTextBox.Text = " ";
             AddressTextBox.Text = " ";
