@@ -12,15 +12,15 @@ namespace Assignment_3_bitm_seip
 {
     public partial class HomeCoffeeShop : Form
     {
-        const int size = 2;
+        const int size = 10;
         int index = 0;
-      //  string[] array = new string[size];
+        //  string[] array = new string[size];
         //string[] array2 = new string[size];
         string[] customerName = new string[size];
         string[] contactNumber = new string[size];
         string[] address = new string[size];
         string[] order = new string[size];
-        
+
         int[] quantity = new int[size];
         public HomeCoffeeShop()
         {
@@ -35,14 +35,14 @@ namespace Assignment_3_bitm_seip
             array[2] = AddressTextBox.Text;
             array[3] = orderComboBox.Text;
             array2[0] = Convert.ToInt32(quantityTextBox.Text);*/
-            if (index < size)
+            if (size>index)
             {
                 customerName[index] = customerNameTextBox.Text;
                 contactNumber[index] = contactNumberTextBox.Text;
                 address[index] = AddressTextBox.Text;
                 order[index] = orderComboBox.Text;
                 quantity[index] = Convert.ToInt32(quantityTextBox.Text);
-                index++;
+                //index++;
             }
             
             if (order[index] == "Black")
@@ -95,5 +95,7 @@ namespace Assignment_3_bitm_seip
 
 
         }
+
+        
     }
 }
